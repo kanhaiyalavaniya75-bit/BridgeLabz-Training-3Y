@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="Q8.css">
+</head>
+<body>
+    <header><h1>Box-Sizing Comparison</h1></header>
+    <main>
+        <div class="comparison">
+            <section>
+                <h2>Default Box-Sizing</h2>
+                <div class="box default-box">Width: 260px<br>Padding: 25px<br>Border: 5px</div>
+                <p>With content-box, padding and border are added to the declared width.</p>
+            </section>
+            <section>
+                <h2>Border-Box</h2>
+                <div class="box border-box">Width: 260px<br>Padding: 25px<br>Border: 5px</div>
+                <p>With border-box, padding and border are included inside the declared width.</p>
+            </section>
+        </div>
+    </main>
+    <footer>Both boxes use equal declared width for comparison.</footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/* Tooltip containers use relative positioning so the tooltip can be placed above them. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fb; color: #222; }
+header, footer { text-align: center; padding: 20px; background: #263859; color: white; }
+.tooltip-area { min-height: 70vh; display: flex; justify-content: center; align-items: center; gap: 70px; }
+.tooltip-box { position: relative; text-align: center; }
+.icon { display: inline-flex; position: relative; width: 60px; height: 60px; justify-content: center; align-items: center; background: #4b6cb7; color: white; border-radius: 50%; font-size: 28px; cursor: pointer; }
+.tooltip { position: absolute; bottom: calc(100% + 12px); left: 50%; transform: translateX(-50%); background: #222; color: white; padding: 9px 12px; border-radius: 6px; white-space: nowrap; opacity: 0; visibility: hidden; transition: 0.3s ease-in-out; font-size: 14px; }
+.tooltip::after { content: ""; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 6px solid transparent; border-top-color: #222; }
+.icon:hover .tooltip, .tooltip-box:hover > .tooltip { opacity: 1; visibility: visible; }

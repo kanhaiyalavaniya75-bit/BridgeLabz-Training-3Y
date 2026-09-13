@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f1f5f9; color: #222; }
+header, footer { text-align: center; padding: 20px; background: #263b5a; color: white; }
+.effects { min-height: 70vh; display: flex; justify-content: center; align-items: center; gap: 25px; flex-wrap: wrap; }
+.effects button { padding: 15px 28px; border: 2px solid #2563eb; border-radius: 9px; background: white; color: #1d4ed8; font-size: 16px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,.12); transition: all .3s ease; }
+.effect-one:hover { transform: scale(1.08); background: #2563eb; color: white; }
+.effect-two:hover { transform: translateY(-8px); background: #0f766e; color: white; box-shadow: 0 12px 20px rgba(0,0,0,.2); }
+.effect-three:hover { transform: rotate(-3deg) scale(1.04); background: #7c3aed; color: white; }
+.effects button:focus { outline: 3px solid #f59e0b; outline-offset: 3px; }
+.effects button:active { transform: scale(.94); }

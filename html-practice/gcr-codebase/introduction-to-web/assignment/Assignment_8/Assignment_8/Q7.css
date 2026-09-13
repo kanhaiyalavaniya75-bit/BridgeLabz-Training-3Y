@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; background: linear-gradient(135deg, #e0eafc, #cfdef3); color: #222; display: flex; flex-direction: column; }
+header, footer { text-align: center; padding: 20px; background: rgba(35,59,93,.95); color: white; }
+.ui-card { width: min(90%, 520px); margin: auto; padding: 30px; background: white; border-radius: 16px; box-shadow: 0 12px 30px rgba(0,0,0,.15); display: flex; flex-direction: column; gap: 12px; }
+.search-row, .actions { display: flex; gap: 10px; }
+input, select, button { padding: 12px 14px; border: 1px solid #b8c2d1; border-radius: 8px; font-size: 15px; }
+input, select { width: 100%; }
+button { background: #2563eb; color: white; border: none; cursor: pointer; transition: .3s ease; }
+button:hover { transform: translateY(-2px); box-shadow: 0 5px 12px rgba(0,0,0,.15); }
+input:focus, select:focus { outline: 3px solid #f59e0b; outline-offset: 2px; }
+.secondary { background: #64748b; }
+.actions button { flex: 1; }

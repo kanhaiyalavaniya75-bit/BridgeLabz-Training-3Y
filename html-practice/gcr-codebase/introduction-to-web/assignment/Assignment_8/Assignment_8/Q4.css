@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fa; color: #222; }
+header, footer { text-align: center; background: #243b55; color: white; padding: 20px; }
+main { max-width: 850px; margin: auto; padding: 35px 20px; }
+.intro { background: white; padding: 25px; border-radius: 10px; }
+p { line-height: 1.6; } /* Element selector */
+.highlight { background: #fff0b3; padding: 8px; } /* Class selector */
+#special { color: #b42318; font-weight: bold; } /* ID selector */
+a[href^="https"] { color: #087443; font-weight: bold; } /* Attribute selector */
+.parent > p { border-left: 4px solid #243b55; padding-left: 10px; } /* Child combinator > */
+.parent div p { color: #6b46c1; } /* Descendant combinator */
+.parent p + p { background: #e8f1ff; } /* Adjacent sibling + */
+.parent p ~ p { font-style: italic; } /* General sibling ~ */
+.selector-demo { margin-top: 25px; background: white; padding: 25px; border-radius: 10px; }
