@@ -1,0 +1,17 @@
+/* Attribute selector: selects text inputs */
+input[type="text"]{border:2px solid #2563eb;background:#eff6ff}
+/* Attribute selector: links beginning with https */
+a[href^="https"]{color:#15803d;font-weight:bold}
+/* Pseudo-classes */
+a:hover{color:#dc2626}input:focus{outline:3px solid #f59e0b}li:nth-child(odd){background:#e0f2fe}
+/* Pseudo-elements */
+h2::before{content:"★ ";color:#f59e0b}h2::after{content:" ★";color:#f59e0b}.intro::first-letter{font-size:2em;font-weight:bold}
+/* Child combinator: direct children */
+.content>h2{letter-spacing:1px}
+/* Adjacent sibling combinator */
+h2+a{margin-right:20px}
+/* General sibling combinator */
+h2~ul{border-left:4px solid #2563eb}
+/* Descendant combinator */
+.content p span{font-weight:bold;color:#7c3aed}
+body{margin:0;font-family:Arial,sans-serif;background:#f8fafc;color:#1e293b}main{max-width:850px;margin:40px auto;padding:30px}.content{background:white;padding:25px;border-radius:14px;box-shadow:0 8px 25px #0002}ul{padding:20px 30px}li{padding:10px;margin:4px}input{padding:12px;margin:8px;border-radius:8px;border:1px solid #94a3b8}
