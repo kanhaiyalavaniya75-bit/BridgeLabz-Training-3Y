@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 60px 7%;
+    font-family: Arial, sans-serif;
+    background: #f2f5f9;
+    color: #202b3c;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.plans {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    flex: 1;
+    min-height: 390px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+    animation: fadeIn 1s ease forwards;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.featured {
+    flex-grow: 1.08;
+    background: #dfeeff;
+    border: 3px solid #3c6f9f;
+}
+
+.card h2,
+.price {
+    text-align: center;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card li {
+    margin: 15px 0;
+}
+
+.card a {
+    margin-top: auto;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    background: #294e70;
+    color: white;
+    border-radius: 7px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 750px) {
+    .plans {
+        flex-direction: column;
+    }
+
+    .featured {
+        flex-grow: 1;
+    }
+}
