@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f6ff;
+    color: #17233c;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px 5%;
+    background: #17233c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+main {
+    flex: 1;
+    padding-top: 75px;
+}
+
+.hero {
+    min-height: 75vh;
+    padding: 8vh 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: #dce8ff;
+}
+
+.hero div {
+    max-width: 55%;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.hero img {
+    width: 30%;
+    max-width: 220px;
+    border-radius: 50%;
+    border: 5px solid #17233c;
+}
+
+.about,
+.contact {
+    padding: 60px 8%;
+}
+
+.about {
+    background: white;
+}
+
+.contact {
+    background: #c9d9f7;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #17233c;
+    color: white;
+}

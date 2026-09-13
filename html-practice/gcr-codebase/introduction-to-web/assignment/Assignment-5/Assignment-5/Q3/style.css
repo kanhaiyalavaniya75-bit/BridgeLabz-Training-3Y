@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #202a38;
+}
+
+.team {
+    min-height: 100vh;
+    padding: 60px 6%;
+}
+
+.team > h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.team-container {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    padding: 30px;
+    margin: 10px;
+    border: 2px solid #aab5c5;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card h3 {
+    color: #3568a8;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.lead {
+    background: #dcecff;
+    border: 3px dashed #3568a8;
+}
+
+@media (max-width: 600px) {
+    .team-container {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 8px 0;
+    }
+}
